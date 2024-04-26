@@ -8,11 +8,8 @@ const key = "45bea0cd";
 const getMovies = () => {
   const movieName = movieNameRef.value;
 // Now you can use this URL to fetch data from the OMDb API
-
-  // const url = `http:/`;
   const url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
-
-
+  
   // if input field is empty
   if (movieName.length <= 0) {
       result.innerHTML = `<h3 class="msg">Please Enter Movie Name Here</h3>`
